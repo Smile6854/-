@@ -34,7 +34,7 @@ instance.interceptors.request.use(
 )
 
 // 响应拦截器
-instance.interceptors.request.use(
+instance.interceptors.response.use(
   // 取出data数据。将来调用接口 的时候直接拿到的就是后台的数据
   (res) => {
     return res.data
